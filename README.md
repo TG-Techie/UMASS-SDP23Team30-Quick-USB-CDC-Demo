@@ -23,7 +23,7 @@ Each packet is composed of four sections (l)
 1. Sync end `b"\x0f\xf0\x00\xff"`
 
 This format was choosen to
-1. Somewhat mirror a packet base protocl we'll be implemnting later.
+1. Somewhat mirror a packet base protocol we'll be implemnting later.
 2. To format msgpack so it can be transmitted over a stream
 3. The format is quick, easy, and clear.
 
