@@ -23,9 +23,9 @@ Each packet is composed of four sections (l)
 1. Sync end `b"\x0f\xf0\x00\xff"`
 
 This format was choosen to
-A. Somewhat mirror a packet base protocl we'll be implemnting later.
-B. To format msgpack so it can be transmitted over a stream
-C. The format is quick, easy, and clear.
+1. Somewhat mirror a packet base protocl we'll be implemnting later.
+2. To format msgpack so it can be transmitted over a stream
+3. The format is quick, easy, and clear.
 
 ## Hardware
 - 1x Adafruit RP2040 Feather (or any CP board w/ a qwiic connector attached to `board.I2C()`)
