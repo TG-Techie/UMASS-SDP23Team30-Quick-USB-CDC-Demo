@@ -16,11 +16,16 @@ When restating either script, be sure to restart the other as well.
 If any data is missing or mal-encoded the program(s) is not built to recover or re-try transmission. Instead, it will ~~throw a fit~~ raise excetions accordingly.
 
 #### about
-Each packet is composed of four sections (again, not final)
+Each packet is composed of four sections (l)
 1. Sync start `b"\x00\xff\xf0\x00"`
 1. One byte indicating the length of the data (in bytes)
 1. Msgpack encoded binary data
 1. Sync end `b"\x0f\xf0\x00\xff"`
+
+This format was choosen to
+A. Somewhat mirror a packet base protocl we'll be implemnting later.
+B. To format msgpack so it can be transmitted over a stream
+C. The format is quick, easy, and clear.
 
 ## Hardware
 - 1x Adafruit RP2040 Feather (or any CP board w/ a qwiic connector attached to `board.I2C()`)
