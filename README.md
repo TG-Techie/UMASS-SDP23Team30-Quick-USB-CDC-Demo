@@ -8,7 +8,7 @@ This was a quick (and rought) demo whipped together to demonstrate transporting 
 - Install circuitpython 8.0 or greater onto your board (tested with 8.0.2)
 - Drage the contents of, well,  `./board-contents` onto the `CIRCUITPY` USB Device
 - Run `./driver_on_host.py` on your local device
-- Enjoy
+- Enjoy?
 
 When restating either script, be sure to restart the other as well.
 
